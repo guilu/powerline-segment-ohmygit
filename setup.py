@@ -6,8 +6,7 @@ setup(
     author='Diego Barrio H',
     author_email='diegobarrioh@gmail.com',
     packages=find_packages(),
-    namespace_packages=['plohmygit']
-    scripts=['bin/plohmygit.py'],
+    namespace_packages=['plohmygit'],
     url='http://diegobarrioh.es/plohmygit/',
     license='LICENSE.txt',
     description='Module for powerline based on oh-my-git',
