@@ -1,27 +1,35 @@
 ===========
-Powerline 
+Powerline
 ===========
 
-segment para powerline que sustituye al branch, basado en oh-my-git
+Segmento para powerline que personaliza y muestra información de nuestros repositorios git (sustituye al branch que viene por defecto), me he inspirado en oh-my-git y he utilizando las fuentes patched de awesome-terminal-fonts
 
-A Section
-=========
-
-Lists look like this:
+Instalación
+===========
 
 * First
 
-* Second. Can be multiple lines
-  but must be indented properly.
+	Lo primero que voy a asumir es que teneis instalado y funcionando vuestro powerline shell... (con zsh o bash, yo uso bash, pero creo que la instalación es básicamente la misma) y que, por lo tanto, también tenéis **pip** con las **setuptools** actualizadas.
 
-A Sub-Section
+* Second
+
+	Lo segundo que asumiré es que conoceis como personalizar los temas y colores de powerline para mostrar cada segmento de una forma personalizada... (copiar la carpeta config_files a ~/.config/powerline y allí retocar los .json)
+	
+Una vez dicho esto lo único que tienes que hacer para instalar este segmento es ejecutar:
+
+	pip install --user git+git://github.com/guilu/powerline-segment-ohmygit
+
+
+
+Personalización
 -------------
 
-Numbered lists look like you'd expect:
+Una vez instalado tendrás que tocar el fichero de configuración del tema que estés usando, añadiendo el segmento:
 
-1. hi there
-
-2. must be going
-
-Urls are http://like.this and links can be
-written `like this <http://www.example.com/foo/bar>`_.
+			{
+				"module": "plohmygit.segment.plohmygit",
+			    "name": "plohmygit",
+			    "args": {
+			    	"use_path_separator": true
+			    }
+			},
