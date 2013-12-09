@@ -16,64 +16,138 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Powerline-segment-ohmygit</h1>
-        <p class="header">Powerline segment to replace the default git shell prompt</p>
+          <h1 class="header">Powerline segment ohmygit</h1>
+          <p class="header">Powerline segment to replace the default git shell prompt</p>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/guilu/powerline-segment-ohmygit/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/guilu/powerline-segment-ohmygit/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/guilu/powerline-segment-ohmygit">View On GitHub</a></li>
-        </ul>
+          <ul>
+            <li class="download"><a class="buttons" href="https://github.com/guilu/powerline-segment-ohmygit/zipball/master">Download ZIP</a></li>
+            <li class="download"><a class="buttons" href="https://github.com/guilu/powerline-segment-ohmygit/tarball/master">Download TAR</a></li>
+            <li><a class="buttons github" href="https://github.com/guilu/powerline-segment-ohmygit">View On GitHub</a></li>
+          </ul>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/guilu">guilu</a></p>
-
-
+          <p class="header">This project is maintained by <a class="header name" href="https://github.com/guilu">guilu</a></p>
       </header>
-      <section>
-        <h1></h1>
 
-<h1>
-<a name="powerline" class="anchor" href="#powerline"><span class="octicon octicon-link"></span></a>Powerline</h1>
+     <section style="text-align:justify">
+        <h1>Segmento de powerline personalizado:<br> oh my git!</h1>
+        Este aspecto tiene en mi terminal por defecto un repo de git:<br>
+        <img src="./images/begin.png" alt="como tengo el terminal al principio">
+        <p >Tampoco es que mate, verdad?... <br>Pues viendo por ahí diferentes opciones para mostrar la información del repositorio en el prompt, me topé con un par de proyectos interesantes, por un lado <a href="https://github.com/arialdomartini/oh-my-git" target="_blank">oh-my-git</a> y por otro <a href="https://github.com/Lokaltog/powerline" target="_blank">powerline</a> (os recomiendo que les echéis un vistazo). <br>Después de escudriñar los entresijos de ambos, mi conclusión fué que el prompt de powerline (en concreto el segmento 'branch' que muestra información de la rama) es bonito pero se queda corto en información, y el prompt de oh-my-git ofrece mucha información pero no es lo bonito que me gustaría. Así que mi pensamiento fue: <b>Y si me llevo la información que ofrece oh-my-git a un segmento (es como se llaman a los 'plugins') de powerline??</b><br><br>
 
-<p>Segmento para powerline que personaliza y muestra información de nuestros repositorios git (sustituye al branch que viene por defecto), me he inspirado en oh-my-git y he utilizando las fuentes patched de awesome-terminal-fonts</p>
-
-<h1>
-<a name="instalaci%C3%B3n" class="anchor" href="#instalaci%C3%B3n"><span class="octicon octicon-link"></span></a>Instalación</h1>
-
-<ul>
-<li>
-<p>First</p>
-
-<p>Lo primero que voy a asumir es que teneis instalado y funcionando vuestro powerline shell... (con zsh o bash, yo uso bash, pero creo que la instalación es básicamente la misma) y que, por lo tanto, también tenéis <strong>pip</strong> con las <strong>setuptools</strong> actualizadas.</p>
-</li>
-<li>
-<p>Second</p>
-
-<p>Lo segundo que asumiré es que conoceis como personalizar los temas y colores de powerline para mostrar cada segmento de una forma personalizada... (copiar la carpeta config_files a ~/.config/powerline y allí retocar los .json)</p>
-</li>
-</ul><p>Una vez dicho esto lo único que tienes que hacer para instalar este segmento es ejecutar:</p>
-
-<pre><code>pip install --user git+git://github.com/guilu/powerline-segment-ohmygit
-</code></pre>
-
-<h2>
-<a name="personalizaci%C3%B3n" class="anchor" href="#personalizaci%C3%B3n"><span class="octicon octicon-link"></span></a>Personalización</h2>
-
-<p>Una vez instalado tendrás que tocar el fichero de configuración del tema que estés usando, añadiendo el segmento:</p>
-
-<p>{
-"module": "plohmygit.segment.plohmygit",
-"name": "plohmygit",
-"args": {
-"use_path_separator": true
-}
-},</p>
+         Dicho y hecho... He creado un segmento  para personalizar el prompt de mi shell cuando entro a un repositorio de git. <br><br>Todo configurado y funcionando tiene un aspecto tal que así:
+         </p>
+        <img src="./images/end.png" alt="como queda con este proyecto instalado">
+        <h4>Que son todos esos números y símbolos?</h4>
+        <p>Desde el path en adelante se muestra la información del repositorio actual. El nombre de la rama, si hay cambios, ficheros sin trackear, eliminados y borrados, etc... <br><br> Voy a explicarlo un poco en la imagen:</p>
+        <img src="./images/end-explained.png" alt="Explicación de que és cada numerito...">
       </section>
+
+      <section>
+        Alá! <span style="font-size:8px">(1)</span> y como hago yo eso, seguro que es chungo y hay que saber la weba de shell script, python, el terminal y demás. Pues en realidad no! no tienes más que seguir unos pocos pasos que te indico aquí bajo y sin más a funcionar!! <br>Empiezo por los requisitos que tendrás que instalar (te pongo los comandos y todo), luego como instalar el segmento y al final la configuración personalizada... en un pis pás lo tienes funcionando. Vamos a ello!!
+        <br><br>
+        <span style="font-size:8px">(1)</span> <a href="http://lema.rae.es/dpd/srv/search?id=y4tWrhpTiD6aaYp7Ht" target="_blank">alá! en la rae</a> que te ha sonado raro, lo sé.
+      </section>
+
+
+      <section style="text-align:justify">
+        <h1>Requisitos</h1>
+        <p>
+        Este proyecto es un segmento de powerline, así que lo primero que hay que tener instalado es el propio powerline, el repositorio oficial creo que es este:<a href="https://github.com/Lokaltog/powerline" target="_blank">Lokaltog/powerline</a>.<br>
+        Hay muchísima documentación de como instalarlo y configurarlo, pero si no queréis pasar por eso, en resumidas cuentas lo que viene a decir es que tienes que tener python instalado (en los mac viene de casa) y que la manera más facil es instalarlo con pip....
+        </p>
+        <p>instalar pip: Creo que easy_install viene por defecto también en los mac así que tendréis que hacer:</p>
+        <pre><code>sudo easy_install pip</code></pre>
+        <p>Una vez instalado pip ya podeis pasar a instalar el proyecto, primero aseguraos de que tenéis las últimas setuptools </p>
+        <pre><code>sudo pip install --upgrade setuptools</code></pre>
+        <p>Esto va a las librerias globales de python por eso otra vez con sudo... En el momento de escribir esto se me instalan las setuptools 1.4.2.</p>
+        <p>Ahora ya podéis pasar a instalar powerline</p>
+        <pre><code>pip install --user git+git://github.com/Lokaltog/powerline</code></pre>
+        <p>Esto hace que se instale a nivel de usuario desde git a la carpeta de paquetes de python: ~/Library/Python/2.7/lib/python/site-packages/powerline</p>
+        <p>Ahora hay que activar el prompt de powerline, modificando tu .bashrc o .bash_profile (yo uso bash, si usais otro shell supongo que será parecido) añadiendo la línea:</p>
+        <pre><code style="font-size:12px">. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh</code></pre>
+
+        <p>Perfecto! ya tienes el prompt de powerline instalado! Ahora hay que añadirle este segmento y personalizarlo.... vamos allá!!</p>
+      </section>
+
+      <section style="text-align:justify">
+
+        <h1>
+          <a name="instalaci%C3%B3n" class="anchor" href="#instalaci%C3%B3n"><span class="octicon octicon-link"></span></a>Instalación
+        </h1>
+
+        <p>Habiendo instalado pip, powerline y demás, este segmento se instala de la misma manera... super fácil:</p>
+
+        <pre><code>pip install --user git+git://github.com/guilu/powerline-segment-ohmygit</code></pre>
+
+        <p>Con esto ya teneís instalado el segmento <code>plohmygit</code> y lo podéis referenciar desde los archivos de configuración. Vamos a ver como....</p>
+      </section>
+      <section style="text-align:justify">
+        <h1>Configuración</h1>
+        <p>No hace falta modificar los ficheros de configuración de la carpeta ~/Library/Python/2.7/lib/python/site-packages/powerline/config_files/ sino que podemos copiar todos esos ficheros a ~/.config/powerline y allí modificar nuestras configuraciónes personalizadas...</p>
+
+        <p><pre style="font-size:10px">cd ~/.config && mkdir powerline</pre></p>
+        <p><pre style="font-size:10px">cp -R ~/Library/Python/2.7/lib/python/site-packages/powerline/config_files/* ~/.config/powerline</pre></p>
+        <p>Ahora si que tenemos podemos modificar a nuestro gusto los ficheros .json de configuracíon de powerline. La estructura del directorio es:</p>
+        <pre><code style="font-size:8px">powerline/
+├── colors.json
+├── ...
+├── colorschemes
+│   ├── ...
+│   ├── shell
+│   │   ├── default.json
+│   │   ├── diegobarrioh_monokai.json
+│   │   ├── diegobarrioh_solarized.json
+│   │   └── solarized.json
+│   ├── ...
+├── config.json
+└── themes
+    ├── ...
+    ├── shell
+    │   ├── default.json
+    │   ├── default_leftonly.json
+    │   └── diegobarrioh_theme.json
+    ├── ...
+        </code></pre>
+        <p>La configuración arranca con <code>config.json</code> donde debemos indicar que theme y colorscheme queremos usar para nuestro shell.</p>
+        <pre><code>   "shell": {
+      "colorscheme": "diegobarrioh_solarized",
+      "theme": "diegobarrioh_theme"
+    },
+</code></pre>
+<p>Como veis yo indico el colorscheme <a href="https://raw.github.com/guilu/powerline-segment-ohmygit/master/config/powerline/colorschemes/shell/diegobarrioh_solarized.json" target="_blank">diegobarrioh_solarized.json</a> (está en el repositorio pero no se instala con el comando pip, si lo queréis tenéis que bajarlo a manubrio) y lo mismo con el <a href="https://raw.github.com/guilu/powerline-segment-ohmygit/master/config/powerline/themes/shell/diegobarrioh_theme.json" target="_blank">diegobarrioh_theme.json</a>. En éste último es en el que se indica que queremos el segment plohmygit:</p>
+<pre><code>
+...
+segments: {
+"left": [
+        ...
+        {
+          "module": "plohmygit.segment.plohmygit",
+          "name": "plohmygit",
+          "args": {
+              "use_path_separator": true
+          }
+        },
+        ...
+      ]
+}
+...
+        </code></pre>
+
+      et volià!!<br>
+
+      <img src="./images/labs2.png" alt="prompt powerline con segment plohmygit">
+
+      </section>
+      <section style="text-align:justify">
+        <code>Nota:</code> hay algún detalle que me dejo en el tintero, como el uso de los símbolos, las fuentes parcheadas que hay que utilizar, la configuración del iTerm para que se vean bien, etc. Actualizaré esta información tan pronto como pueda... pero seguro que por vuestra cuenta, buscando en google y demás sois capaces de configurarlo todo y dejarlo aún más mejor que yo
+      </section>
+
+
+
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
   </body>
 </html>
