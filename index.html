@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Powerline-segment-ohmygit by guilu</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Powerline-segment-ohmygit</h1>
+        <p class="header">Powerline segment to replace the default git shell prompt</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/guilu/powerline-segment-ohmygit/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/guilu/powerline-segment-ohmygit/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/guilu/powerline-segment-ohmygit">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/guilu">guilu</a></p>
+
+
+      </header>
+      <section>
+        <h1></h1>
+
+<h1>
+<a name="powerline" class="anchor" href="#powerline"><span class="octicon octicon-link"></span></a>Powerline</h1>
+
+<p>Segmento para powerline que personaliza y muestra información de nuestros repositorios git (sustituye al branch que viene por defecto), me he inspirado en oh-my-git y he utilizando las fuentes patched de awesome-terminal-fonts</p>
+
+<h1>
+<a name="instalaci%C3%B3n" class="anchor" href="#instalaci%C3%B3n"><span class="octicon octicon-link"></span></a>Instalación</h1>
+
+<ul>
+<li>
+<p>First</p>
+
+<p>Lo primero que voy a asumir es que teneis instalado y funcionando vuestro powerline shell... (con zsh o bash, yo uso bash, pero creo que la instalación es básicamente la misma) y que, por lo tanto, también tenéis <strong>pip</strong> con las <strong>setuptools</strong> actualizadas.</p>
+</li>
+<li>
+<p>Second</p>
+
+<p>Lo segundo que asumiré es que conoceis como personalizar los temas y colores de powerline para mostrar cada segmento de una forma personalizada... (copiar la carpeta config_files a ~/.config/powerline y allí retocar los .json)</p>
+</li>
+</ul><p>Una vez dicho esto lo único que tienes que hacer para instalar este segmento es ejecutar:</p>
+
+<pre><code>pip install --user git+git://github.com/guilu/powerline-segment-ohmygit
+</code></pre>
+
+<h2>
+<a name="personalizaci%C3%B3n" class="anchor" href="#personalizaci%C3%B3n"><span class="octicon octicon-link"></span></a>Personalización</h2>
+
+<p>Una vez instalado tendrás que tocar el fichero de configuración del tema que estés usando, añadiendo el segmento:</p>
+
+<p>{
+"module": "plohmygit.segment.plohmygit",
+"name": "plohmygit",
+"args": {
+"use_path_separator": true
+}
+},</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
