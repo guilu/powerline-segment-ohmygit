@@ -6,7 +6,7 @@ Este aspecto tiene en mi terminal por defecto un repo de git:
 <img src="http://guilu.github.io/powerline-segment-ohmygit/images/begin.png" width="700">
 
 Tampoco es que mate, verdad?... 
-Pues viendo por ahí diferentes opciones para mostrar la información del repositorio en el prompt, me topé con un par de proyectos interesantes, por un lado oh-my-git y por otro powerline (os recomiendo que les echéis un vistazo). 
+Pues viendo por ahí diferentes opciones para mostrar la información del repositorio en el prompt, me topé con un par de proyectos interesantes, por un lado [oh-my-git](https://github.com/arialdomartini/oh-my-git) y por otro [powerline](https://github.com/Lokaltog/powerline) (os recomiendo que les echéis un vistazo). 
 Después de escudriñar los entresijos de ambos, mi conclusión fué que el prompt de powerline (en concreto el segmento 'branch' que muestra información de la rama) es bonito pero se queda corto en información, y el prompt de oh-my-git ofrece mucha información pero no es lo bonito que me gustaría. Así que mi pensamiento fue: Y si me llevo la información que ofrece oh-my-git a un segmento (es como se llaman a los 'plugins') de powerline??
 
 Dicho y hecho... He creado un segmento para personalizar el prompt de mi shell cuando entro a un repositorio de git. 
@@ -31,7 +31,7 @@ Empiezo por los requisitos que tendrás que instalar (te pongo los comandos y to
 ##Requisitos
 
 
-Este proyecto es un segmento de powerline, así que lo primero que hay que tener instalado es el propio powerline, el repositorio oficial creo que es este: [Lokaltog/powerline](https://github.com/Lokaltog/powerline).
+Este proyecto es un segmento de powerline, así que lo primero que hay que tener instalado es el propio powerline, el repositorio oficial creo que es el que os he puesto arriba: [Lokaltog/powerline](https://github.com/Lokaltog/powerline).
 Hay muchísima documentación de como instalarlo y configurarlo, pero si no queréis pasar por eso, en resumidas cuentas lo que viene a decir es que tienes que tener python instalado (en los mac viene de casa) y que la manera más facil es instalarlo con pip....
 
 instalar pip: Creo que easy_install viene por defecto también en los mac así que tendréis que hacer:
