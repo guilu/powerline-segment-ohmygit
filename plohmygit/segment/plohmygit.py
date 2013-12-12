@@ -158,7 +158,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
         else:
             current_branch = current_commit_hash[:7]
         ret.append({
-            'contents': "%s%s" % (icons['deatached_head'],current_branch),
+            'contents': "%s%s" % (icons['deatached_head'] if icons['deatached_head'] else icon_default['deatached_head'],current_branch),
             'highlight_group':   'deatached_head',
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
@@ -166,7 +166,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
 
     else:
         ret.append({
-            'contents': "%s%s" % (icons['branch'],current_branch),
+            'contents': "%s%s" % (icons['branch'] if icons['branch'] else icon_default['branch'],current_branch),
             'highlight_group':   'branch_dirty' if dirty else 'branch_clean',
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
@@ -175,14 +175,14 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
     if has_upstream:
         if will_rebase:
             ret.append({
-                'contents': "%s%s %s" % (icons['upstream'],upstream,icons['will_rebase']),
+                'contents': "%s%s %s" % (icons['upstream'] if icons['upstream'] else icon_default['upstream'],upstream,icons['will_rebase'] if icons['will_rebase'] else icon_default['will_rebase']),
                 'highlight_group':   'upstream',
                 'divider_highlight_group': 'cwd:divider',
                 'draw_inner_divider': draw_inner_divider,
             })
         else:
             ret.append({
-                'contents': "%s%s %s" % (icons['upstream'],upstream,icons['will_merge']),
+                'contents': "%s%s %s" % (icons['upstream'] if icons['upstream'] else icon_default['upstream'],upstream,icons['will_merge'] if icons['will_merge'] else icon_default['will_merge']),
                 'highlight_group':   'upstream',
                 'divider_highlight_group': 'cwd:divider',
                 'draw_inner_divider': draw_inner_divider,
@@ -190,7 +190,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
 
         if has_diverged:
             ret.append({
-                'contents': "-%s %s+%s" % (commits_behind,icons['diverged'],commits_ahead),
+                'contents': "-%s %s+%s" % (commits_behind,icons['diverged'] if icons['diverged'] else icon_default['diverged'],commits_ahead),
                 'highlight_group':   "diverged",
                 'divider_highlight_group': 'upstream',
                 'draw_inner_divider': draw_inner_divider,
@@ -198,14 +198,14 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
         else:
             if commits_behind > 0:
                 ret.append({
-                    'contents': "%s-%s" % (icons['can_fast_forward'],commits_behind),
+                    'contents': "%s-%s" % (icons['can_fast_forward'] if iconss['can_fast_forward'] else icon_default['can_fast_forward'] ,commits_behind),
                     'highlight_group':   "commits:behind",
                     'divider_highlight_group': 'cwd:divider',
                     'draw_inner_divider': draw_inner_divider,
                 })
             if commits_ahead > 0:
                 ret.append({
-                'contents': "%s+%s" % (icons['should_push'],commits_ahead),
+                'contents': "%s+%s" % (icons['should_push'] if icons['should_push'] else icon_default['should_push'],commits_ahead),
                 'highlight_group':   "commits:ahead",
                 'divider_highlight_group': 'cwd:divider',
                 'draw_inner_divider': draw_inner_divider,
@@ -213,7 +213,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
 
     if has_staged > 0:
         ret.append({
-            'contents': "%s%s" % (icons['staged'],has_staged),
+            'contents': "%s%s" % (icons['staged'] if icons['staged'] else icon_default['staged'],has_staged),
             'highlight_group': "staged",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
@@ -221,7 +221,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
 
     if has_modified > 0:
         ret.append({
-            'contents': "%s%s" % (icons['modified'],has_modified),
+            'contents': "%s%s" % (icons['modified'] if icons['modified'] else icon_default['modified'],has_modified),
             'highlight_group': "modified",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
@@ -230,49 +230,49 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
 
     if has_modified_cached > 0:
         ret.append({
-            'contents': "%s%s" % (icons['modified_cached'],has_modified_cached),
+            'contents': "%s%s" % (icons['modified_cached'] if icons['modified_cached'] else icon_default['modified_cached'],has_modified_cached),
             'highlight_group': "modified_cached",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
         })
     if has_renamed > 0:
         ret.append({
-            'contents': "%s%s" % (icons['renamed'],has_renamed),
+            'contents': "%s%s" % (icons['renamed'] if icons['renamed'] else icon_default['renamed'],has_renamed),
             'highlight_group': "renamed",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
         })
     if has_deleted > 0:
         ret.append({
-            'contents': "%s%s" % (icons['deleted'],has_deleted),
+            'contents': "%s%s" % (icons['deleted'] if icons['deleted'] else icon_default['deleted'],has_deleted),
             'highlight_group': "deleted",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
         })
     if has_deleted_cached > 0:
         ret.append({
-            'contents': "%s%s" % (icons['deleted_cached'],has_deleted_cached),
+            'contents': "%s%s" % (icons['deleted_cached'] if icons['deleted_cached'] else icon_default['deleted_cached'],has_deleted_cached),
             'highlight_group': "deleted_cached",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
         })
     if has_untracked > 0:
         ret.append({
-            'contents': "%s%s" % (icons['untracked'],has_untracked),
+            'contents': "%s%s" % (icons['untracked'] if icons['untracked'] else icon_default['untracked'],has_untracked),
             'highlight_group': "untracked",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
         })
     if has_tag:
         ret.append({
-            'contents': "%s%s" % (icons['tag'],tag_at_current_commit),
+            'contents': "%s%s" % (icons['tag'] if icons['tag'] else icon_default['tag'],tag_at_current_commit),
             'highlight_group': "tagged",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
         })
     if has_stashed:
         ret.append({
-            'contents': "%s%s" % (icons['stashed'],number_of_stashes),
+            'contents': "%s%s" % (icons['stashed'] if icons['stashed'] else icon_default['stashed'],number_of_stashes),
             'highlight_group': "stashed",
             'divider_highlight_group': 'cwd:divider',
             'draw_inner_divider': draw_inner_divider,
