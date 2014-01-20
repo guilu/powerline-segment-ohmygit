@@ -5,11 +5,11 @@ Este aspecto tiene en mi terminal por defecto un repo de git:
 
 <img src="http://guilu.github.io/powerline-segment-ohmygit/images/begin.png" width="700">
 
-Tampoco es que mate, verdad?... 
-Pues viendo por ahí diferentes opciones para mostrar la información del repositorio en el prompt, me topé con un par de proyectos interesantes, por un lado [oh-my-git](https://github.com/arialdomartini/oh-my-git) y por otro [powerline](https://github.com/Lokaltog/powerline) (os recomiendo que les echéis un vistazo). 
+Tampoco es que mate, verdad?...
+Pues viendo por ahí diferentes opciones para mostrar la información del repositorio en el prompt, me topé con un par de proyectos interesantes, por un lado [oh-my-git](https://github.com/arialdomartini/oh-my-git) y por otro [powerline](https://github.com/Lokaltog/powerline) (os recomiendo que les echéis un vistazo).
 Después de escudriñar los entresijos de ambos, mi conclusión fué que el prompt de powerline (en concreto el segmento 'branch' que muestra información de la rama) es bonito pero se queda corto en información, y el prompt de oh-my-git ofrece mucha información pero no es lo bonito que me gustaría. Así que mi pensamiento fue: Y si me llevo la información que ofrece oh-my-git a un segmento (es como se llaman a los 'plugins') de powerline??
 
-Dicho y hecho... He creado un segmento para personalizar el prompt de mi shell cuando entro a un repositorio de git. 
+Dicho y hecho... He creado un segmento para personalizar el prompt de mi shell cuando entro a un repositorio de git.
 
 Todo configurado y funcionando tiene un aspecto tal que así:
 
@@ -17,14 +17,14 @@ Todo configurado y funcionando tiene un aspecto tal que así:
 
 ### Que son todos esos números y símbolos?
 
-Desde el path en adelante se muestra la información del repositorio actual. El nombre de la rama, si hay cambios, ficheros sin trackear, eliminados y borrados, etc... 
+Desde el path en adelante se muestra la información del repositorio actual. El nombre de la rama, si hay cambios, ficheros sin trackear, eliminados y borrados, etc...
 
 Voy a explicarlo un poco en la imagen:
 
 <img src="http://guilu.github.io/powerline-segment-ohmygit/images/end-explained.png" width="700">
 
-Alá! (1) y como hago yo eso, seguro que es chungo y hay que saber la weba de shell script, python, el terminal y demás. Pues en realidad no! no tienes más que seguir unos pocos pasos que te indico aquí bajo y sin más a funcionar!! 
-Empiezo por los requisitos que tendrás que instalar (te pongo los comandos y todo), luego como instalar el segmento y al final la configuración personalizada... en un pis pás lo tienes funcionando. Vamos a ello!! 
+Alá! (1) y como hago yo eso, seguro que es chungo y hay que saber la weba de shell script, python, el terminal y demás. Pues en realidad no! no tienes más que seguir unos pocos pasos que te indico aquí bajo y sin más a funcionar!!
+Empiezo por los requisitos que tendrás que instalar (te pongo los comandos y todo), luego como instalar el segmento y al final la configuración personalizada... en un pis pás lo tienes funcionando. Vamos a ello!!
 
 (1) alá! en la [rae](http://lema.rae.es/dpd/srv/search?id=y4tWrhpTiD6aaYp7Ht) que te ha sonado raro, lo sé.
 
@@ -41,7 +41,7 @@ instalar pip: Creo que easy_install viene por defecto también en los mac así q
 Una vez instalado pip ya podeis pasar a instalar el proyecto, primero aseguraos de que tenéis las últimas setuptools
 
 	sudo pip install --upgrade setuptools
-	
+
 Esto va a las librerias globales de python por eso otra vez con sudo... En el momento de escribir esto se me instalan las setuptools 1.4.2.
 
 Ahora ya podéis pasar a instalar powerline
@@ -77,7 +77,7 @@ No hace falta modificar los ficheros de configuración de la carpeta **~/Library
 
 
 Ahora si que tenemos podemos modificar a nuestro gusto los ficheros .json de configuracíon de powerline. La estructura del directorio es:
-	
+
 	powerline/
 	├── colors.json
 	├── ...
@@ -97,7 +97,7 @@ Ahora si que tenemos podemos modificar a nuestro gusto los ficheros .json de con
 	    │   ├── default_leftonly.json
 	    │   └── diegobarrioh_theme.json
 	    ├── ...
-        
+
 La configuración arranca con config.json donde debemos indicar que theme y colorscheme queremos usar para nuestro shell.
 
 	"shell": {
@@ -139,6 +139,6 @@ Las fuentes parcheadas están en la carpeta [fonts](https://github.com/guilu/pow
 
 ##Update 1
 
-He modificado los ficheros de configuración de los temas diegobarrioh_solarized.json & diegobarrioh_monokai.json así como diegobarrioh_theme.json, para que tenga esta apariencia.... 
+He modificado los ficheros de configuración de los temas diegobarrioh_solarized.json & diegobarrioh_monokai.json así como diegobarrioh_theme.json, para que tenga esta apariencia....
 
 <img src="http://guilu.github.io/powerline-segment-ohmygit/images/labs3.png" width="700">
