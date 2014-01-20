@@ -2,7 +2,7 @@
 	"default_module": "powerline.segments.common",
 	"segment_data": {
 		"hostname": {
-			"before": " ",
+			"before": " ",
 			"args": {
 				"only_if_ssh": true
 			}
@@ -16,6 +16,14 @@
 	},
 	"segments": {
 		"left": [
+			{
+				"name":"date",
+				"args":{
+					"format":"%H:%M",
+					"istime": true
+				}
+			},
+			{"name":"hostname"},
 			{
 				"name": "virtualenv"
 			},
@@ -32,10 +40,10 @@
 			    	"use_path_separator": true,
 			    	"icons":{
 			    		"branch": " ",
-					    "staged": " ",
-					    "added":  " ",
-					    "modified": " ",
-					    "modified_cached": " ",
+					    "staged": " ",
+					    "added":  " ",
+					    "modified": " ",
+					    "modified_cached": " ",
 					    "renamed":  " ",
 					    "deleted":  " ",
 					    "deleted_cached":  " ",
@@ -53,12 +61,10 @@
 					    "deatached_head": " "}
 				}
 			},
-
 			{
 				"name": "last_status",
 				"module": "powerline.segments.shell"
 			}
-
 		]
 	}
 }

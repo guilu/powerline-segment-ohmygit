@@ -130,4 +130,15 @@ et volià!!
 
 **Lo que se ve en esta ventana:** Aquí podeís ver el último commit de este tutorial (bueno, el penúltimo, el último será cuando suba esto que escribo ahora...) donde subo las imágenes y explicaciones. La rama gh-pages sale en naranja (sucia) y hay 5 ficheros staged (1 de ellos ha sido modificado). La rama tiene como upstream origin/gh-pages y el iconito a la derecha indica que al hacer push se va a hacer merge en lugar de rebase. Cuando hago el commit la rama queda limpia y 1 commit ahead de upstream (lista para hacer push). Meto la pata haciendo push y ese comando devuelve un error (el 128 en rojo que es el error del último comando ejecutado, otro segmento de powerline). El push correcto: g push origin gh-pages, sube todo bien y ya está publicado este tutorial...
 
-**Nota**: hay algún detalle que me dejo en el tintero, como el uso de los símbolos, las fuentes parcheadas que hay que utilizar, la configuración del iTerm para que se vean bien, etc. Actualizaré esta información tan pronto como pueda... pero seguro que por vuestra cuenta, buscando en google y demás sois capaces de configurarlo todo y dejarlo aún más mejor que yo
+##Fuentes
+
+Las fuentes parcheadas están en la carpeta [fonts](https://github.com/guilu/powerline-segment-ohmygit/tree/master/fonts). Tienes que descargarlas, instalarlas en tu equipo y seleccionarlas (por ejemplo en iTerm2) en las preferencias de texto de la aplicación:
+
+<img src="http://guilu.github.io/powerline-segment-ohmygit/images/fonts-prefs.png" width="700">
+
+
+##Update 1
+
+He modificado los ficheros de configuración de los temas diegobarrioh_solarized.json & diegobarrioh_monokai.json así como diegobarrioh_theme.json, para que tenga esta apariencia.... 
+
+<img src="http://guilu.github.io/powerline-segment-ohmygit/images/labs3.png" width="700">

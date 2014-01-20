@@ -198,7 +198,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
         else:
             if commits_behind > 0:
                 ret.append({
-                    'contents': "%s-%s" % (icons['can_fast_forward'] if iconss['can_fast_forward'] else icon_default['can_fast_forward'] ,commits_behind),
+                    'contents': "%s-%s" % (icons['can_fast_forward'] if icons['can_fast_forward'] else icon_default['can_fast_forward'] ,commits_behind),
                     'highlight_group':   "commits:behind",
                     'divider_highlight_group': 'cwd:divider',
                     'draw_inner_divider': draw_inner_divider,

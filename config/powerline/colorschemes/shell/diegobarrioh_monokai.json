@@ -15,20 +15,25 @@
 		"branch": 							{ "fg": "gray9", "bg": "gray2" },
 		"branch_dirty": 					{ "fg": "yellow", "bg": "gray2" },
 		"branch_clean": 					{ "fg": "green", "bg": "gray2" },
+
         "staged":                            { "fg": "gray2", "bg": "yellow" },
         "modified":                          { "fg": "gray2", "bg": "green" },
-        "modified_cached":                   { "fg": "brightestorange", "bg": "gray2" },
+        "modified_cached":                   { "fg": "yellow", "bg": "gray2" },
         "renamed":                           { "fg": "yellow", "bg": "gray4" },
         "deleted":                           { "fg": "gray1", "bg": "gray4" },
         "deleted_cached":                    { "fg": "red", "bg": "gray4" },
         "untracked":                         { "fg": "gray2", "bg": "cyan" },
         "tagged":                            { "fg": "yellow", "bg": "gray2" },
-        "stashed":                           { "fg": "darkblue", "bg": "gray2" },
+        "stashed":                           { "fg": "cyan", "bg": "gray6" },
         "deatached":                         { "fg": "red", "bg": "red" },
         "commits:behind":                    { "fg": "yellow", "bg": "yellow" },
         "commits:ahead":                     { "fg": "gray2", "bg": "green" },
         "upstream":                          { "fg": "gray1", "bg": "gray4" },
         "diverged":                          { "fg": "yellow", "bg": "yellow" },
-        "deatached_head":                    { "fg": "red", "bg": "red" }
+        "deatached_head":                    { "fg": "darkestred", "bg": "red" },
+
+
+        "date":               { "fg": "darkestblue", "bg": "cyan" },
+        "time:divider":       { "fg": "oldlace", "bg": "green" }
 	}
 }
