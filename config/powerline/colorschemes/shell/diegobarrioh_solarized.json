@@ -1,1 +1,62 @@
-/Users/diegobarrioh/.config/powerline/colorschemes/shell/diegobarrioh_solarized.json
+{
+        "name": "DiegoBarrioH colors for solarized dark terminal colors",
+        "groups": {
+                "date":               { "fg": "gray7", "bg": "royalblue5" },
+                "time:divider":       { "fg": "gray13", "bg": "royalblue5" },
+
+                "user":               { "fg": "oldlace", "bg": "blue" },
+                "superuser":          { "fg": "oldlace", "bg": "red", "attr": ["bold"] },
+                "virtualenv":         { "fg": "oldlace", "bg": "green" },
+                "branch:divider":     { "fg": "gray13", "bg": "royalblue5" },
+                "cwd":                { "fg": "darkestblue", "bg": "royalblue5" },
+                "cwd:current_folder": { "fg": "blue", "bg": "royalblue5" },
+                "cwd:divider":        { "fg": "gray13", "bg": "royalblue5" },
+                "hostname":           { "fg": "oldlace", "bg": "cyan" },
+                "exit_fail":          { "fg": "oldlace", "bg": "red" },
+                "exit_success":       { "fg": "oldlace", "bg": "green" },
+                "environment":        { "fg": "oldlace", "bg": "green" },
+                "external_ip":        { "fg": "oldlace", "bg": "green" },
+
+                "fuzzy_time":         { "fg": "oldlace", "bg": "green" },
+                "battery_gradient":   { "fg": "oldlace", "bg": "green" },
+                "battery":            { "fg": "oldlace", "bg": "green" },
+
+                "weather_condition_mostly_cloudy_night":    { "fg": "oldlace", "bg": "green" },
+                "weather_condition_cloudy":                 { "fg": "oldlace", "bg": "green" },
+                "weather_conditions":                       { "fg": "oldlace", "bg": "green" },
+                "weather":                                  { "fg": "oldlace", "bg": "green" },
+
+                "branch":                            { "fg": "gray13", "bg": "royalblue5" },
+                "branch_dirty":                      { "fg": "royalblue5", "bg": "brightestorange" },
+                "branch_clean":                      { "fg": "royalblue5", "bg": "green" },
+                "added":                             { "fg": "royalblue5", "bg": "blue" },
+                "staged":                            { "fg": "royalblue5", "bg": "green" },
+                "staged_ready_to_commit":            { "fg": "royalblue5", "bg": "brightgreen" },
+                "staged_info":                       { "fg": "royalblue5", "bg": "green" },
+                "modified":                          { "fg": "royalblue5", "bg": "yellow" },
+                "modified_cached":                   { "fg": "royalblue5", "bg": "green" },
+                "renamed":                           { "fg": "yellow", "bg": "royalblue5" },
+                "deleted":                           { "fg": "royalblue5", "bg": "red" },
+                "deleted_cached":                    { "fg": "royalblue5", "bg": "red" },
+                "untracked":                         { "fg": "royalblue5", "bg": "cyan" },
+                "tagged":                            { "fg": "royalblue5", "bg": "yellow" },
+                "stashed":                           { "fg": "royalblue5", "bg": "darkblue" },
+                "deatached":                         { "fg": "red", "bg": "red" },
+                "commits:behind":                    { "fg": "yellow", "bg": "brightyellow" },
+                "commits:ahead":                     { "fg": "darkestred", "bg": "red" },
+                "upstream":                          { "fg": "gray13", "bg": "royalblue5" },
+                "diverged":                          { "fg": "yellow", "bg": "brightyellow" },
+                "deatached_head":                    { "fg": "darkestred", "bg": "red" },
+
+                "system_load_gradient":              { "fg": "red", "bg": "royalblue5" },
+                "cpu_load_percent_gradient":         { "fg": "GREEN_Orange_red", "bg": "royalblue5" },
+
+                "uptime":                            { "fg": "yellow", "bg": "royalblue5" },
+                "background:divider":                { "fg": "gray13", "bg": "royalblue5" },
+
+                "network_load_recv":                    { "fg": "gray13", "bg": "royalblue5" },
+                "network_load_sent_gradient":           { "fg": "royalblue5", "bg": "dark_GREEN_Orange_red"},
+                "network_load":                         { "fg": "gray13", "bg": "royalblue5" }
+
+        }
+}
