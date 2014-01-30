@@ -142,3 +142,17 @@ Las fuentes parcheadas están en la carpeta [fonts](https://github.com/guilu/pow
 He modificado los ficheros de configuración de los temas diegobarrioh_solarized.json & diegobarrioh_monokai.json así como diegobarrioh_theme.json, para que tenga esta apariencia....
 
 <img src="http://guilu.github.io/powerline-segment-ohmygit/images/labs3.png" width="700">
+
+##Versión 2.0
+
+He modificado el fichero de configuración del tema [diegobarrioh_solarized.json](https://raw.github.com/guilu/powerline-segment-ohmygit/master/config/powerline/colorschemes/shell/diegobarrioh_solarized.json) y el [segmento](https://raw.github.com/guilu/powerline-segment-ohmygit/master/plohmygit/segment/plohmygit.py):
+
+<img src="http://guilu.github.io/powerline-segment-ohmygit/images/ohmygit-v2.0.png" width="700">
+
+En esta primera imagen estamos en la rama master (amarilla: hay ficheros cambiados), esta rama trackea la remota origin/master (el icono derecho indica que se va hacer rebase on pull), siguiente indicador: un commit behind y uno ahead (rama divergente). Hay staged 1 fichero (signo ok fondo verde claro indica que no esta listo para commit), de ese stage (sigue en verde) el fichero se ha borrado. A continuación hay 3 fichero sin trackear y uno borrado sin pasar a staged. Los 2 últimos segmentos son el tag del commit actual y el numero de stashes guardados.
+
+Ahora voy a añadir todo lo que falta al stage.... y queda:
+
+<img src="http://guilu.github.io/powerline-segment-ohmygit/images/ohmygit-2.v2.0.png" width="700">
+
+La rama divergente igual con 6 ficheros staged (ahora en verde claro significa listo para hacer commit) y a continuación viene la info del staged (2 added, 2 modified y 2 renamed).
