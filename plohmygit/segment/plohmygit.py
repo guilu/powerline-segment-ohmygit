@@ -189,14 +189,14 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
             ret.append({
                 'contents': "%s%s %s" % (icons['upstream'] if icons['upstream'] else icon_default['upstream'],upstream,icons['will_rebase'] if icons['will_rebase'] else icon_default['will_rebase']),
                 'highlight_group':   'upstream',
-                'divider_highlight_group': 'cwd:divider',
+                'divider_highlight_group': 'upstream',
                 'draw_inner_divider': draw_inner_divider,
             })
         else:
             ret.append({
                 'contents': "%s%s %s" % (icons['upstream'] if icons['upstream'] else icon_default['upstream'],upstream,icons['will_merge'] if icons['will_merge'] else icon_default['will_merge']),
                 'highlight_group':   'upstream',
-                'divider_highlight_group': 'cwd:divider',
+                'divider_highlight_group': 'upstream',
                 'draw_inner_divider': draw_inner_divider,
             })
 
@@ -204,7 +204,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
             ret.append({
                 'contents': "-%s %s+%s" % (commits_behind,icons['diverged'] if icons['diverged'] else icon_default['diverged'],commits_ahead),
                 'highlight_group':   "diverged",
-                'divider_highlight_group': 'upstream',
+                'divider_highlight_group': 'diverged',
                 'draw_inner_divider': draw_inner_divider,
             })
         else:
@@ -212,14 +212,14 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
                 ret.append({
                     'contents': "%s-%s" % (icons['can_fast_forward'] if icons['can_fast_forward'] else icon_default['can_fast_forward'] ,commits_behind),
                     'highlight_group':   "commits:behind",
-                    'divider_highlight_group': 'cwd:divider',
+                    'divider_highlight_group': 'commits:behind',
                     'draw_inner_divider': draw_inner_divider,
                 })
             if commits_ahead > 0:
                 ret.append({
                 'contents': "%s+%s" % (icons['should_push'] if icons['should_push'] else icon_default['should_push'],commits_ahead),
                 'highlight_group':   "commits:ahead",
-                'divider_highlight_group': 'cwd:divider',
+                'divider_highlight_group': 'commits:ahead',
                 'draw_inner_divider': draw_inner_divider,
             })
 
