@@ -1,18 +1,18 @@
 {
         "name": "DiegoBarrioH colors for solarized dark terminal colors",
         "groups": {
-                "date":               { "fg": "gray7", "bg": "royalblue5" },
+                "date":               { "fg": "gray13", "bg": "royalblue5" },
                 "time:divider":       { "fg": "gray13", "bg": "royalblue5" },
 
                 "user":               { "fg": "oldlace", "bg": "blue" },
                 "superuser":          { "fg": "oldlace", "bg": "red", "attr": ["bold"] },
                 "virtualenv":         { "fg": "oldlace", "bg": "green" },
                 "branch:divider":     { "fg": "gray13", "bg": "royalblue5" },
-                "cwd":                { "fg": "darkestblue", "bg": "royalblue5" },
-                "cwd:current_folder": { "fg": "blue", "bg": "royalblue5" },
+                "cwd":                { "fg": "blue", "bg": "royalblue5" },
+                "cwd:current_folder": { "fg": "skyblue1", "bg": "royalblue5" },
                 "cwd:divider":        { "fg": "gray13", "bg": "royalblue5" },
                 "hostname":           { "fg": "oldlace", "bg": "cyan" },
-                "exit_fail":          { "fg": "oldlace", "bg": "red" },
+                "exit_fail":          { "fg": "darkestred", "bg": "red" },
                 "exit_success":       { "fg": "oldlace", "bg": "green" },
                 "environment":        { "fg": "oldlace", "bg": "green" },
                 "external_ip":        { "fg": "oldlace", "bg": "green" },
@@ -43,7 +43,9 @@
                 "stashed":                           { "fg": "royalblue5", "bg": "darkblue" },
                 "deatached":                         { "fg": "red", "bg": "red" },
                 "commits:behind":                    { "fg": "yellow", "bg": "brightyellow" },
-                "commits:ahead":                     { "fg": "darkestred", "bg": "red" },
+
+                "commits:ahead":                     { "fg": "bbackground1", "bg": "brightgreen" },
+
                 "upstream":                          { "fg": "gray13", "bg": "royalblue5" },
                 "diverged":                          { "fg": "yellow", "bg": "brightyellow" },
                 "deatached_head":                    { "fg": "darkestred", "bg": "red" },

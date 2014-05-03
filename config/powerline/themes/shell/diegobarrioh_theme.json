@@ -40,25 +40,29 @@
 			    	"use_path_separator": true,
 			    	"icons":{
 			    		"branch": " ",
+
+					    "upstream": "  ",
+					    "will_merge": " ",
+					    "will_rebase": " ",
+					    "behind": " ",
+					    "ahead": " ",
+					    "diverged": " ",
+					    "can_fast_forward": " ",
+					    "should_push": " ",
+					    "deatached_head": " ",
+
 					    "staged": " ",
 					    "added":  " ",
 					    "modified": " ",
 					    "modified_cached": " ",
-					    "renamed":  " ",
 					    "deleted":  " ",
 					    "deleted_cached":  " ",
 					    "untracked": " ",
+						"renamed":  " ",
+						"renamed_cached":  " ",
 					    "tag": " ",
-					    "stashed": " ",
-					    "behind": " ",
-					    "ahead": " ",
-					    "diverged": " ",
-					    "upstream": "  ",
-					    "will_merge": " ",
-					    "will_rebase": " ",
-					    "can_fast_forward": " ",
-					    "should_push": " ",
-					    "deatached_head": " "}
+					    "stashed": " "
+					}
 				}
 			},
 			{

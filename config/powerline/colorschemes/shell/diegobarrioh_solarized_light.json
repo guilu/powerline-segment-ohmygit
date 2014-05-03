@@ -1,0 +1,60 @@
+{
+        "name": "DiegoBarrioH colors for solarized dark terminal colors",
+        "groups": {
+                "user":               { "fg": "oldlace", "bg": "blue" },
+                "superuser":          { "fg": "oldlace", "bg": "red", "attr": ["bold"] },
+                "virtualenv":         { "fg": "oldlace", "bg": "green" },
+                "branch:divider":     { "fg": "lbackground1", "bg": "lbackground1" },
+                "cwd":                { "fg": "gray61", "bg": "lbackground1" },
+                "cwd:current_folder": { "fg": "blue", "bg": "lbackground1" },
+                "cwd:divider":        { "fg": "lbackground1", "bg": "lbackground1" },
+                "hostname":           { "fg": "oldlace", "bg": "cyan" },
+                "exit_fail":          { "fg": "oldlace", "bg": "red" },
+                "exit_success":       { "fg": "oldlace", "bg": "green" },
+                "environment":        { "fg": "oldlace", "bg": "green" },
+                "external_ip":        { "fg": "oldlace", "bg": "green" },
+
+                "fuzzy_time":         { "fg": "oldlace", "bg": "green" },
+                "battery_gradient":   { "fg": "oldlace", "bg": "green" },
+                "battery":            { "fg": "oldlace", "bg": "green" },
+
+
+                "date":               { "fg": "lightskyblue4", "bg": "royalblue5" },
+                "time:divider":       { "fg": "oldlace", "bg": "green" },
+
+                "weather_condition_mostly_cloudy_night":    { "fg": "oldlace", "bg": "green" },
+                "weather_condition_cloudy":                 { "fg": "oldlace", "bg": "green" },
+                "weather_conditions":                       { "fg": "oldlace", "bg": "green" },
+                "weather":                                  { "fg": "oldlace", "bg": "green" },
+
+                "branch":                            { "fg": "gray61", "bg": "lbackground1" },
+                "branch_dirty":                      { "fg": "yellow", "bg": "lbackground1" },
+                "branch_clean":                      { "fg": "green", "bg": "lbackground1" },
+                "staged":                            { "fg": "lbackground1", "bg": "brightgreen" },
+                "modified":                          { "fg": "yellow", "bg": "lbackground1" },
+                "modified_cached":                   { "fg": "green", "bg": "lbackground1" },
+                "renamed":                           { "fg": "yellow", "bg": "lbackground1" },
+                "deleted":                           { "fg": "yellow", "bg": "lbackground1" },
+                "deleted_cached":                    { "fg": "darkred", "bg": "lbackground1" },
+                "untracked":                         { "fg": "cyan", "bg": "lbackground1" },
+                "tagged":                            { "fg": "yellow", "bg": "lbackground1" },
+                "stashed":                           { "fg": "darkblue", "bg": "lbackground1" },
+                "deatached":                         { "fg": "red", "bg": "red" },
+                "commits:behind":                    { "fg": "yellow", "bg": "yellow" },
+                "commits:ahead":                     { "fg": "green", "bg": "green" },
+                "upstream":                          { "fg": "lbackground1", "bg": "lbackground1" },
+                "diverged":                          { "fg": "yellow", "bg": "yellow" },
+                "deatached_head":                    { "fg": "red", "bg": "red" },
+
+                "system_load_gradient":              { "fg": "red", "bg": "lbackground1" },
+                "cpu_load_percent_gradient":         { "fg": "GREEN_Orange_red", "bg": "lbackground1" },
+
+                "uptime":                            { "fg": "yellow", "bg": "lbackground1" },
+                "background:divider":                { "fg": "lbackground1", "bg": "lbackground1" },
+
+                "network_load_recv":                    { "fg": "lbackground1", "bg": "lbackground1" },
+                "network_load_sent_gradient":           { "fg": "lbackground1", "bg": "dark_GREEN_Orange_red"},
+                "network_load":                         { "fg": "lbackground1", "bg": "lbackground1" }
+
+        }
+}
