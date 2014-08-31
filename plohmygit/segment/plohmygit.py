@@ -172,7 +172,7 @@ def plohmygit(pl, segment_info,use_path_separator=False,icons=[]):
         ret.append({
             'contents': "%s%s" % (icons['deatached_head'] if icons['deatached_head'] else icon_default['deatached_head'],current_branch),
             'highlight_group':   'deatached_head',
-            'divider_highlight_group': 'cwd:divider',
+            'divider_highlight_group': 'deleted',
             'draw_inner_divider': draw_inner_divider,
             })
 
