@@ -19,7 +19,7 @@
 			{
 				"name":"date",
 				"args":{
-					"format":"%H:%M",
+					"format":"%H%M",
 					"istime": true
 				}
 			},
@@ -41,7 +41,7 @@
 			    	"icons":{
 			    		"branch": " ",
 
-					    "upstream": "  ",
+					    "upstream": " ",
 					    "will_merge": " ",
 					    "will_rebase": " ",
 					    "behind": " ",
@@ -64,10 +64,12 @@
 					    "stashed": " "
 					}
 				}
-			},
+			}
+		],
+		"right": [
 			{
-				"name": "last_status",
-				"module": "powerline.segments.shell"
+				"module": "powerline.segments.shell",
+				"name": "last_pipe_status"
 			}
 		]
 	}

@@ -58,7 +58,8 @@
 
                 "network_load_recv":                    { "fg": "gray13", "bg": "royalblue5" },
                 "network_load_sent_gradient":           { "fg": "royalblue5", "bg": "dark_GREEN_Orange_red"},
-                "network_load":                         { "fg": "gray13", "bg": "royalblue5" }
+                "network_load":                         { "fg": "gray13", "bg": "royalblue5" },
+                "osx_battery":                          { "fg": "yellow", "bg": "royalblue5" }
 
         }
 }
