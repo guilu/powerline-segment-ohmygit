@@ -1,6 +1,9 @@
 ###Segmento de powerline personalizado:
 ##Oh my git!
 
+	NOTA: Este segmento es para powerline-1.0. Ha quedado deprected ya que powerline está actualmente en la versión 1.3.1 y tiene una nueva estructura.
+	Tengo pendiente actualizar este proyecto, cuando me pase a Yosemite, empezaré desde 0 y con el terminal limpio lo crearé otra vez. Sorry for the inconvenience.... :)
+
 Este aspecto tiene en mi terminal por defecto un repo de git:
 
 <img src="http://guilu.github.io/powerline-segment-ohmygit/images/begin.png" width="700">
